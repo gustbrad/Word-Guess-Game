@@ -1,0 +1,45 @@
+.jumbotron{
+    background-image: url(../images/city4.jpg);
+    background-size: 100% 100%;
+   color: #8B0000; 
+}
+
+.main{
+    background-color: #A9A9A9;
+    /*background-color: #17234E;*/
+} 
+
+.col-md-4{
+   color: #8B0000;
+}
+
+#side{
+    background-image: url(../images/main1.jpg);
+    height: 100%; 
+    width: 100%;
+    background-size: 100% 100%;
+    z-index: 10;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+} 
+
+#progress{
+    height: 100%; 
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+

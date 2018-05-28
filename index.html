@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- Linking CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--Page Title-->
+        <title>Word Guess Spy Game</title>
+    </head>
+    
+    <!-- Linking javascript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+    <!-- Overall Bootstrap Grid -->
+    <div class="container">
+    
+    <!--Calls Function that starts the game-->
+    <body onload= "doItAll()" class="main" >
+
+        <!-- Jumbotron with Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">
+              <strong>Word Guess Spy Edition</strong>
+            </h1>
+        </div>
+        <!-- Card to hold images and text from game -->
+        <content> 
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 p-3">
+                        <div id="side">
+                        </div>
+                    </div>               
+                    <div class="col-md-4 col-sm-12 p-3">
+                        <div>
+                            <h1>Guess the Word!</h1>
+                            <br>
+                            <h2>Enter a letter to get started!</h2>
+                            <br>
+                        </div>
+                        <div>
+                            <div id="letters">
+                            </div>
+                            <h3> Current Word: <p id="chosenWord"></h3>
+                            <h3> Number of Guesses Remaining:<p id="numberGuesses"></h3>
+                            <h3> Letters Guessed: <p id="lettersGuessed"></h3>
+                            <h3> Wins: <p id="winsText"></h3>
+                            <h3> <p id="winLose"></h3> 
+                            <br>
+                            <br>                     
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 p-3">
+                        <div id="progress">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </content>
+    </body>
+</html>
